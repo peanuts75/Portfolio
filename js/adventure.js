@@ -69,7 +69,7 @@ const draw = (num) => {
                                 console.log(`condition is ${condition} before goto`)
                                 if (inventory.includes(condition) || condition == "") {
                                     currentArea = subvalue
-                                    console.log("if confirmed")} else{ console.log("else confirmed")}
+                                    console.log("if confirmed")} else{ console.log("else confirmed"); break}
                                 condition = ""
                                 draw(currentArea)
                                 break}})}}})}
