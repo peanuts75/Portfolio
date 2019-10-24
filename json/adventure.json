@@ -29,6 +29,10 @@
     {   "title": "How this works",
         "subtitle": "A brief overview",
         "desc": "This game works by reading from a json file. \n\nThe json file is split into an array of different objects, and each object is an area. These areas have a title, a subtitle and a description as manditory key-value pairs, any others use the key as the input required to access that area and the value is the number of the room that the input will take you to.\n\nNote that these pairs, or links, are area dependent; this means that saying 'next' in one room might have no effect. Feel free to experiment by manipulating the json file, you can easily create your own adventure that way!",
-        "back": 0
+        "back": 0,
+        "+1": {
+            "condition": "test item",
+            "goto": 2
+        }
     }
 ]
