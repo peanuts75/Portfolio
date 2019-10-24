@@ -1,0 +1,16 @@
+body{
+    background-color:black;
+    color:white;
+}
+div{
+    text-align: center;
+    font-size: 12pt;
+}
+h1{
+    font-size: 42pt;
+}
+button{
+    width: 512px;
+    font-size: 30pt;
+    border:0;
+}

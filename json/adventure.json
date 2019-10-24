@@ -1,0 +1,34 @@
+[
+    {   "title": "Welcome to my game!",
+        "subtitle": "Type 'next' to start",
+        "desc": "Make sure that the text field is in focus to play the game. If it is not in focus, then the text field will turn gray until focus is returned. Type 'next' to continue. You can also type a few other things such as 'info', 'inventory' or 'restart' at any time.",
+        "next": 1
+    },
+
+    {   "title": "Introductory Zone",
+        "subtitle": "Screen 1",
+        "desc": "You can type 'back' to go to the previous screen or 'next' to go to the next screen",
+        "back": 0,
+        "next": 2,
+        "+1": {
+            "add": "test item"
+        },
+        "+2":{
+            "add": "another test item"
+        }
+    },
+
+    {   "title": "Introductory Zone",
+        "subtitle": "Screen 2",
+        "desc": "This zone does not link to the other zones. You are trapped here. (Actually, you can just type 'restart' at any time if you want to go back to the beginning)",
+        "+1": {
+            "add": "third test item"
+        }
+    },
+    
+    {   "title": "How this works",
+        "subtitle": "A brief overview",
+        "desc": "This game works by reading from a json file. \n\nThe json file is split into an array of different objects, and each object is an area. These areas have a title, a subtitle and a description as manditory key-value pairs, any others use the key as the input required to access that area and the value is the number of the room that the input will take you to.\n\nNote that these pairs, or links, are area dependent; this means that saying 'next' in one room might have no effect. Feel free to experiment by manipulating the json file, you can easily create your own adventure that way!",
+        "back": 0
+    }
+]
