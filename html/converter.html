@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/converter.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+
+
+        <h1>Converter</h1>
+        <h2>Type your number to convert and then choose how to convert it</h2>
+
+        <div class="row">
+            <input type="text" id="convertinput" value="Type the number to convert here"> <!-- Number to convert -->
+        </div>
+
+        <div class="row">
+            <input type="radio" id="Napier" name="numtype" value="Napier"> <label for="Napier">Napier's Locational</label>
+            <input type="radio" id="binary" name="numtype" value="binary"> <label for="binary">Binary</label>
+            <input type="radio" id="octal" name="numtype" value="octal"> <label for="octal">Octal</label>
+            <input type="radio" id="hexadecimal" name="numtype" value="hexadecimal"> <label for="hexadecimal">Hexadecimal</label>
+        </div>
+
+        <div class="row">
+            <input type="radio" id="to" name="tofrom" value="to"> <label for="to">From decimal to chosen base</label>
+            <input type="radio" id="from" name="tofrom" value="from"> <label for="from">From chosen base to decimal</label>
+        </div>
+
+        <div class="row">
+            <input type="button" id="submit"value="Press here when finished">
+        </div>
+
+        <div class="row">
+            <h3 id="results">Results go here</h3>
+        </div>
+
+    </div>
+
+
+
+    <script type="text/javascript" src="../js/converter.js"></script>
+</body>
+
+</html>
