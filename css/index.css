@@ -3,11 +3,11 @@ html{
     background-image:linear-gradient(
         to right,
         #4360,
-        #436f 3vw,
+        #436f 4vw,
         #4360 0px,
-        #4360 97vw,
+        #4360 96vw,
         #4360 0px,
-        #436f 3vw,
+        #436f 4vw,
         #4360
     );
 }
@@ -20,14 +20,10 @@ h1{
     text-align: center;
 }
 
-h2{ 
-
-}
-
 nav{
     margin:5px 5vw 5px 5vw;
     display:flex;
-    flex-flow: row nowrap;
+    flex-wrap: wrap;
     width:90%;
     background-image: linear-gradient(
         to bottom,
@@ -43,6 +39,7 @@ nav{
     );
     border-color:#4369;
 }
+
 nav :hover, nav :focus, nav :active{
     color:#cbdf
 }
@@ -57,8 +54,8 @@ nav :hover, nav :focus, nav :active{
 
 .central{
     text-align:justify;
-    margin: 50px 5vw 50px 5vw;
-    padding: 50px 5vw 50px 5vw;
+    margin: 20px 5vw 50px 5vw;
+    padding: 20px 5vw 20px 5vw;
     border:5px solid #cbd9;
     background-image: linear-gradient(
         to bottom,
@@ -81,4 +78,22 @@ nav :hover, nav :focus, nav :active{
         #4369
     );
     background-blend-mode: soft-light;
+}
+
+@media only screen and (max-width:1200px){
+    .pagelink {
+        flex:20%
+    }
+}
+
+@media only screen and (max-width:750px){
+    .pagelink{
+        flex:40%
+    }
+}
+
+@media only screen and (max-width:500px){
+    .pagelink{
+        flex:100%
+    }
 }

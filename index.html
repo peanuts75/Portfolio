@@ -33,6 +33,9 @@
         <a href="html/newpage.html" class="pagelink">
             1
         </a>
+        <a href="html/newpage.html" class="pagelink">
+            1
+        </a>
     </nav>
     <div class="central">
     <p>My name is Robert Spottiswood, and this is my portfolio</p>
@@ -44,11 +47,53 @@
     <p>Pressing the 'About me' page above will take you to a website that I created in a previous project at Code Nation. The first page will give you a similar description of myself to what you've already read here. Most of the information on this site is about the site itself and my progress in making it.</p>
 
     <h2>Adventure</h2>
-    <p>Adventure description</p>
+    <p>'Adventure' is the name of my text adventure game engine. It is created using HTML, CSS, Javascript and JSON. Whilst it would have been much easier to implement this without the use of JSON, and possible without even using Javascript, the implementation of JSON allows anyone to create or edit their own adventures by editing only the JSON file.</p>
+    <p>The JSON file that is already in use can serve as a demo of the engine's functionality, and it's reasonably easy to adapt this file to your own adventure. An adventure's JSON file is composed of an an array of objects filled with key-value pairs**. A brief description of the values used for each of the keys used is as follows:</p>
+    <ul>
+        <li>title: the title of the area, shown at the top of the screen</li>
+        <li>subtitle: the subtitle of the area, shown directly below the subtitle</li>
+        <li>desc: short for description; the main text displayed when accessing the area</li>
+        <li>(text**): when the player types the key, they will go to this area number</li>
+        <li>+(text**): defines additional arguments for the area as below</li>
+        <ul>
+            <li>condition: checks the inventory for an item, and only reads the next line if the item is present</li>
+            <li>add: adds an item to the inventory</li>
+            <li>remove: removes an item from the inventory</li>
+            <li>goto: the player goes to this area immediately</li>
+        </ul>
+    </ul>
+    <p>*For those who don't know what this means; the array is defined by square brackets, the objects are defined by curly brackets and the key-value pairs are keys and values seperated by colons (key: value). All keys and values must be in quotes except from goto values. A JSON file is a file with a .json filetype and syntax. </p>
+    <p>**Replace text with any combination of text and numbers, as long as it is unique for the area.</p>
+    
     <h2>Dice</h2>
-    <p>Dice description</p>
+    <p>The dice game is a simple example of a simple game, implemented using Javascript, CSS and HTML. To play the game, simply press the button that appears. Please bear in mind that this is exclusively a 2-player game. The rules are as follows:</p>
+    <ol>
+        <li>The player indicated at the top of the page (player 1, initially) presses the button to roll the dice</li>
+        <li>Repeat step 1 until the player rolls a 1 or has rolled a total of 20 this round</li>
+        <li>If the player has rolled a 1, they have lost the round and it is the next player's turn starting at step 1</li>
+        <li>If the player has totalled 20, they have won the round and it is the next player's turn starting at step 1</li>
+        <li>If all both have played this round, the round is over</li>
+        <li>There are no success, failure or end conditions, but the winner at any point in time is the player with the highest number of wins</li>
+    </ol>
+    <p>Players are able to create their own win conditions, but ultimately this is a game without an ending. This is a simple project and didn't take a long time to create, but I'm still somewhat proud of it.</p>
+
     <h2>Virtual Pet</h2>
-    <p>Virtual Pet description</p>
+    <p>The virtual pet project is a simple implementation of a virtual pet. The virtual pet in question is a dragon, whom you can feed, gift, clean, play with, talk to or check.</p>
+    <ul>
+        <li>Feed: choose an item to feed to the dragon</li>
+        <li>Gift: choose an item to gift to the dragon</li>
+        <li>Clean: choose an way to clean the dragon</li>
+        <li>Play: choose a way to play with the dragon</li>
+        <li>Talk: choose a topic to discuss with the dragon</li>
+        <li>Check: look at the dragon and guage their mood</li>
+    </ul>
+    <p>For each action you take, you're prompted with three potential ways to take this action. Each of these actions will have an effect on the dragon's mood, being either positive, negative or neutral. There will be a description of the effect the action had on the dragon, but ultimately the best way to guage your dragon's mood will be to check on them.</p>
+
+    <h2>Number Converter</h2>
+    <p>Number Converter description</p>
+
+    <h2>Disclaimer</h2>
+    <p>I have not created the DOS font used on adventure.html, the dice images used on dice.html or the ascii art used on dragonpet.html. Although I have permissions to use these assets for the purpose of this website, these are not provided to be claimed or shared unless you already have rights to these assets. Please do not redistribute them under any context or circumstance.</p>
     </div>
 
 </body>
