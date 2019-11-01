@@ -90,8 +90,36 @@
     <p>For each action you take, you're prompted with three potential ways to take this action. Each of these actions will have an effect on the dragon's mood, being either positive, negative or neutral. There will be a description of the effect the action had on the dragon, but ultimately the best way to guage your dragon's mood will be to check on them.</p>
 
     <h2>Number Converter</h2>
-    <p>Number Converter description</p>
+    <p>The number converter is a page which converts common decimal numbers to other number bases. If you're unfamiliar with number bases, a number base is effectively the set of numerals which are used to represent different numbers. The most prolific number base, base 10, uses 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. There are an infinite number of number bases, so I just picked a few of my favourites: </p>
+    <ul>
+        <li>Decimal: each digit is worth its value time 10 to the power of its place. Its place is read from the right starting at 0</li>
+        <ul>
+            <li>123 (b10) = 1x10<sup>2</sup> + 2x10<sup>1</sup> + 3x10<sup>0</sup> (100 + 20 + 3 = 123)</li>
+            <li>321 (b10) = 3x10<sup>2</sup> + 2x10<sup>1</sup> + 1x10<sup>0</sup> (300 + 20 + 1 = 321)</li>
+        </ul>
+        <li>Binary: each digit is worth its value times 10 to the power of its place. Its place is read from the right starting at 0</li>
+        <ul>
+            <li>101 (b2) = 1x2<sup>2</sup> + 0x2<sup>1</sup> + 1x2<sup>0</sup> (4 + 1 = 5)</li>
+            <li>7 (b10) = 1x2<sup>2</sup> + 1x2<sup>1</sup> + 1x2<sup>0</sup> (4 + 2 + 1 = 7)</li>
+        </ul>
+        <li>Octal: each digit is worth its value times 8 to the power of its place. Its place is read from the right starting at 0</li>
+        <ul>
+            <li>246 (b8) = 2x8<sup>2</sup> + 4x8<sup>1</sup> + 6x8<sup>0</sup> (128 + 32 + 6 = 166)</li>
+            <li>333 (b10) = 5x8<sup>2</sup> + 1x8<sup>1</sup> + 5x8<sup>0</sup> (320 + 8 + 5 = 333)</li>
+        </ul>
+        <li>Hexadecimal: each digit is worth its value times 16 to the power of its place. Its place is read from the right starting at 0. a-f have the value of 10-15 respectively</li>
+        <ul>
+            <li>ff (b16) = 15x16<sup>1</sup> + 15x16<sup>0</sup> (140 + 15)</li>
+            <li>3348 (b10) = 13x16<sup>2</sup> + 1x16<sup>1</sup> + 4x16<sup>0</sup> (3328 + 16 + 4)</li> 
+        </ul>
+        <li>Napier's Locational Arithmetic: each digit is worth 2 to the power of its position in the alphabet, starting from a = 2<sup>0</sup></li>
+        <ul>50 (b10) = 1x2<sup>1</sup> + 1x2<sup>4</sup> + 1x2<sup>5</sup> = bef (2 + 16 + 32)</ul>
+        <ul>abacab (bN) = aaabbc = abbbc = abcc = abd = dab = aaaaaaaaaaa = bbabbb = ababababa (there are 306 different ways to write this number)</ul>
+        <ul>abd (bN) = 1x2<sup>0</sup> + 1x2<sup>1</sup> + 1x2<sup>3</sup> = 11 (1 + 2 + 8)</ul>
 
+
+    </ul>
+    <p></p>
     <h2>Disclaimer</h2>
     <p>I have not created the DOS font used on adventure.html, the dice images used on dice.html or the ascii art used on dragonpet.html. Although I have permissions to use these assets for the purpose of this website, these are not provided to be claimed or shared unless you already have rights to these assets. Please do not redistribute them under any context or circumstance.</p>
     </div>
@@ -99,3 +127,21 @@
 </body>
 
 </html>
+<!--
+    aaaaaaaaaaa x 1
+    aaaaaaaaab x 10
+    aaaaaaabb x 36
+    aaaaabbb x 56
+    aaabbbb x 35
+    abbbbb x 6
+
+    aaaaaaac x 8
+    aaaaabc x 42
+    aaabbc x 60
+    abbbc x 20
+    aaacc x 10
+    abcc x 12
+
+    aaad x 4
+    abd x 6
+-->
