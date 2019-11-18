@@ -1,0 +1,33 @@
+*{margin:0; padding:0;}
+h1{
+    font-size:30pt;
+    text-align:center;
+}
+
+h2{
+    font-size:20pt;
+    padding-left:20px;
+    text-align:center;
+}
+
+li{
+    padding: 2px 60px 2px 60px;
+    list-style: none;
+    background-image:linear-gradient(
+        to right,
+        #fffd,
+        #fff5 50px,
+        #fff0 0px,
+        #fff0 100%);
+    background-blend-mode: screen;
+}
+
+li:nth-child(3n-2){
+    background-color:#fee
+}
+li:nth-child(3n-1){
+    background-color:#efe
+}
+li:nth-child(3n){
+    background-color:#eef
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/cheatsheet.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cheat sheet</h1>
+        <h2>HTML</h2> <ul>
+            <li>&lt;!DOCTYPE html></li>
+            <li>&lt;html lang="en"></li>
+            <li>&lt;head meta charset="UTF-8"></li>
+            <li>&lt;head name="viewport" content="width=device-width, initial-scale=1.0"></li>
+            <li>&lt;meta http-equiv="X-UA-Compatible" content="ie=edge"></li>
+            <li>&lt;link rel="stylesheet" href="../folder/cssdocname.css" /></li>
+            <li>&lt;title>Title that appears in the tab name&lt;/title></li>
+            <li>&lt;body>Everything between the head and the HTML end&lt;/body></li>
+            <li>&lt;h1> to &lt;h9> for headings, &lt;p> for paragraphs</li>
+            <li>&lt;q> for quotes, &lt;code> for code</li>
+            <li>&lt;ul> for unordered lists, &lt;ol> for ordered lists, &lt;li> for list items</li>
+            <li>&lt;a> for links and href="x" for the url</li>
+            <li>&lt;pre> for preserving line breaks and indents (ascii art)</li>
+            <li>&lt;script> for internal javascript or external javascript linking</li>
+            <li>(type="text/javascript" src="../folder/jsfilename.js")</li>
+            <li>&lt;sub> and &lt;sup> for subscript and superscript</li>
+            <li>&lt;quote> for inline, &lt;blockquote> for blocks of quoted text</li>
+            <li>&lt;div> divides the page, necessary for decent layout</li>
+            <li>&lt;em> for emphasis, or &lt;i> for italics</li>
+            <li>&lt;frame>s are deprecated, try not to use them</li>
+            <li>&lt;canvas> is a drawable area for use with javascript</li>
+            <li>&lt;del> and &lt;ins> for deleted and insterted text (file history)</li>
+            <li>for inline style, (don't) use style="css content" in a tag</li>
+            <li>use id="id" to add an id to a tag. Conventionally, use 1 of each id</li>
+            <li>use class="class" for anything that has more than 1 instance</li>
+            <li>class becomes className when being accessed via javascript</li></ul>
+        <h2>CSS</h2><ul>
+            <li>htmlelement { key: value }</li>
+            <li>.class { key: value }</li>
+            <li>#id { key: value }</li>
+            <li>* { applied to all elements }</li>
+            <li>color: color of text</li>
+            <li>background-color: background color</li>
+            <li>colors accept rgb, rgba, #fff, #ffffff, #fffa, #ffffffaa, hsv, hsl, hwb, cmyk, color names</li>
+            <li>inner to outer: size, padding, border, margin</li>
+            <li>sizes accepted: number, percent, cm, mm, in, pt, px, vw, vh (viewport width, height)</li>
+            <li>background-image: linear-gradient(to top right, #fff0, #ffff) (trans-white to white, to top right)</li>
+            <li>direction for linear-gradient can include degrees (15deg)</li>
+            <li>background-image: linear-gradient(#fff0, #ffff 10%)</li>
+            <li>the 10% means that that colour will start at 10% of the gradient area. This is 90% solid (roughly)</li>
+            <li>if an absolute number is used instead (px) then it'll start at that length from the start of the previous color</li>
+            <li>use border-radius for corners, 25px will generally be noticably rounder</li>
+            <li>border: width style color (style can be none, hidden, solid, double, dotted, dashed...)</li>
+            <li>opacity: opacity of the element, including text</li>
+            <li>font: style variant weight stretch size/line-height font-family</li>
+            <li>font-style: normal, italic, oblique (xdeg)</li>
+            <li>variant: used for ligatures and caps state (like small caps)</li>
+            <li>font-weight: how bold text is, from lighter to bolder (or numbers)</li>
+            <li>line-height: how spaced out the lines are from each other</li>
+            <li>font-family: once defined, changes the font</li>
+            <li>float: 'float: left' will move the object to the left of its parent inline with text </li></ul>
+        <h2>Javascript</h2>
+            <!-- <h3>Syntax</h3>
+            <h3>Promises</h3>
+            <h3>React</h3>
+            <h3>Sync</h3> -->
+        <h2>Other</h2>
+            <!-- <h3>JSON</h3>
+            <h3>Github</h3>
+            <h3>Yargs</h3> -->
+</body>
+</html>
